@@ -18,4 +18,14 @@
 # limitations under the License.
 #
 
+include_recipe 'ubuntu_base::default'
+
+include_recipe 'octobase::default'
+
 include_recipe 'nodejs::default'
+
+include_recipe 'redis::default'
+
+include_recipe 'hipache::default'
+
+include_recipe 'serf::default'
