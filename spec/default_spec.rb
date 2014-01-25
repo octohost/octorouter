@@ -5,7 +5,7 @@ require 'spec_helper'
 describe 'octorouter::default' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
-  it 'does something' do
-    pending 'Replace this with meaningful tests'
+  it 'includes nodejs' do
+    expect(chef_run).to include_recipe('nodejs::default')
   end
 end

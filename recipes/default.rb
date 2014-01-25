@@ -18,4 +18,4 @@
 # limitations under the License.
 #
 
-# Install/configure something here
+include_recipe 'nodejs::default'
